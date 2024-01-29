@@ -1,0 +1,28 @@
+name: Run TodoistAutomation CLI on main branch commits
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run_todoist_automation:
+    name: Run TodoistAutomation CLI
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+
+    - name: Install TodoistAutomation CLI
+      run: |
+        pip install git+https://github.com/grodtron/TodoistAutomation
+
+    - name: Run TodoistAutomation CLI
+      run: |
+        todoist-sync --dump-only --api-key FOOBAR --yaml-file ./gtd.yml
