@@ -25,4 +25,4 @@ jobs:
 
     - name: Run TodoistAutomation CLI
       run: |
-        todoist-sync --dump-only --api-key FOOBAR --yaml-file ./gtd.yml
+        todoist-sync --dry-run --api-key ${{ secrets.TODOIST_API_KEY }} --yaml-file ./gtd.yml
