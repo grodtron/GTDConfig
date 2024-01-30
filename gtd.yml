@@ -25,3 +25,5 @@ exclusion_lists:
     color: "grey"
   - name: "Waiting"
     color: "lavender"
+
+
