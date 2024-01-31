@@ -7,6 +7,7 @@ contexts:
     color: "blue"
 
 
+
 composite_contexts:
   - name: "errand"
     emojis: "🚴💼🎒🛍️"
