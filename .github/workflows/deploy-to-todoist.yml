@@ -9,6 +9,8 @@ jobs:
   run_todoist_automation:
     name: Run TodoistAutomation CLI
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
 
     steps:
     - name: Checkout repository
