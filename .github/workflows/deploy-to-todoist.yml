@@ -1,7 +1,7 @@
 name: Run TodoistAutomation CLI on main branch commits
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
@@ -25,4 +25,4 @@ jobs:
 
     - name: Run TodoistAutomation CLI
       run: |
-        todoist-sync --dry-run --api-key ${{ secrets.TODOIST_API_KEY }} --yaml-file ./gtd.yml
+        todoist-sync --dry-run --api-key ${{ secrets.TODOIST_API_KEY }} --yaml-file ./gtd.yml preview --github-token ${{ secrets.GITHUB_TOKEN }} --repo ${{ github.repository }} --pr-number ${{ github.event.pull_request.number }}
