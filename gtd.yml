@@ -24,8 +24,8 @@ composite_contexts:
     emojis: "💩💩💩"
     color: "yellow"
     labels:
-      - "123"
-      - "456"
+      - "one-two-three"
+      - "four-five-six"
 
       
 
