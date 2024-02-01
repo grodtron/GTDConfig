@@ -1,0 +1,30 @@
+name: Preview Changes in PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  run_todoist_automation:
+    name: Run TodoistAutomation CLI
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+
+    - name: Install TodoistAutomation CLI
+      run: |
+        pip install git+https://github.com/grodtron/TodoistAutomation
+
+    - name: Run TodoistAutomation CLI
+      run: |
+        todoist-sync --dry-run --api-key ${{ secrets.TODOIST_API_KEY }} --yaml-file ./gtd.yml preview --github-token ${{ secrets.GITHUB_TOKEN }} --repo ${{ github.repository }} --pr-number ${{ github.event.pull_request.number }}
