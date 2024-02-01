@@ -1,7 +1,7 @@
-name: Run TodoistAutomation CLI on main branch commits
+name: Deploy Todoist Changes
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 
@@ -27,4 +27,4 @@ jobs:
 
     - name: Run TodoistAutomation CLI
       run: |
-        todoist-sync --dry-run --api-key ${{ secrets.TODOIST_API_KEY }} --yaml-file ./gtd.yml preview --github-token ${{ secrets.GITHUB_TOKEN }} --repo ${{ github.repository }} --pr-number ${{ github.event.pull_request.number }}
+        todoist-sync --dry-run --api-key ${{ secrets.TODOIST_API_KEY }} --yaml-file ./gtd.yml sync
