@@ -20,6 +20,14 @@ composite_contexts:
     labels:
       - "basement"
       - "office"
+  - name: "Testing"
+    emojis: "💩💩💩"
+    color: "yellow"
+    labels:
+      - "one-two-three"
+      - "four-five-six"
+
+      
 
 exclusion_lists:
   - name: "NotNow"
