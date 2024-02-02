@@ -25,7 +25,7 @@ contexts:
     color: "charcoal"
   # Tasks for work that can be done quickly
   - name: "quick"
-    emojis: "⚡💻✨"
+    emojis: "⚡️💻✨"
     color: "charcoal"
 
 composite_contexts:
