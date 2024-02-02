@@ -30,7 +30,7 @@ contexts:
 
 composite_contexts:
   - name: "home"
-    emojis: "🏠🧺🧹🔨"
+    emojis: "🏠🧺🧹🛠️"
     color: "orange"
     labels:
      - office
