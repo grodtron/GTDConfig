@@ -43,6 +43,7 @@ composite_contexts:
      - hardware-store
      - groceries
 
+
 exclusion_lists:
   - name: "NotNow"
     color: "charcoal"
