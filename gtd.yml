@@ -6,7 +6,7 @@ contexts:
   # Any phone call I need to make
   - name: "call"
     emojis: "📞💬📲"
-    color: "sky_blue"
+    color: "mint_green"
   # Anything I can get done just on my phone
   - name: "iphone"
     emojis: "✨🤳👀"
