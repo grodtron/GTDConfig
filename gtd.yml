@@ -1,29 +1,50 @@
 contexts:
-  - name: "call"
-    emojis: "📞🗣️📲"
-    color: "red"
+  # Anything that needs to get done outside
   - name: "yard"
     emojis: "🏡🌳🍃"
-    color: "blue"
-
+    color: "lime_green"
+  # Any phone call I need to make
+  - name: "call"
+    emojis: "📞💬📲"
+    color: "sky_blue"
+  # Anything I can get done just on my phone
+  - name: "iphone"
+    emojis: "✨🤳👀"
+    color: "yellow"
+  # Anything that requires my computer, and likely a bit more focus
+  - name: "computer"
+    emojis: "📝📊📑"
+    color: "sky_blue"
+  # Things that I need to schedule a time for
+  - name: "schedule"
+    emojis: "🗓️🧱⏰⏲️"
+    color: "berry_red"
+  # Tasks for work that require longer focused blocks of time
+  - name: "focused"
+    emojis: "🎧🧠💻"
+    color: "charcoal"
+  # Tasks for work that can be done quickly
+  - name: "quick"
+    emojis: "⚡💻✨"
+    color: "charcoal"
 
 composite_contexts:
+  - name: "home"
+    emojis: "🏠🧺🧹🔨"
+    color: "orange"
+    labels:
+     - office
+     - basement
   - name: "errand"
     emojis: "🚴💼🎒🛍️"
-    color: "green"
+    color: "red"
     labels:
-      - "pharmacy"
-      - "hardware-store"
-  - name: "home"
-    emojis: "🏠🧺🧹🛠️"
-    color: "yellow"
-    labels:
-      - "basement"
-      - "office"
+     - pharmacy
+     - hardware-store
+     - groceries
 
 exclusion_lists:
   - name: "NotNow"
-    color: "grey"
+    color: "violet"
   - name: "Waiting"
-    color: "lavender"
-
+    color: "grape"
