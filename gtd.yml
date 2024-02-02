@@ -45,6 +45,6 @@ composite_contexts:
 
 exclusion_lists:
   - name: "NotNow"
-    color: "violet"
+    color: "charcoal"
   - name: "Waiting"
-    color: "grape"
+    color: "charcoal"
