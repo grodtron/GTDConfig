@@ -5,6 +5,7 @@ contexts:
   - name: "yard"
     emojis: "🏡🌳🍃"
     color: "blue"
+  - name: Foobar
 
 
 composite_contexts:
