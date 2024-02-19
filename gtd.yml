@@ -27,6 +27,9 @@ contexts:
   - name: "quick"
     emojis: "⚡️💻✨"
     color: "charcoal"
+  - name: "read"
+    emojis: "📚📖▶️"
+    color: "salmon"
 
 composite_contexts:
   - name: "home"
