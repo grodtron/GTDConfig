@@ -27,4 +27,4 @@ jobs:
 
     - name: Run TodoistAutomation CLI
       run: |
-        todoist-sync --debug --api-key ${{ secrets.TODOIST_API_KEY }} --github-token ${{ secrets.GITHUB_TOKEN }} --yaml-file ./gtd.yml sync
+        todoist-sync --debug --api-key ${{ secrets.TODOIST_API_KEY }} --yaml-file ./gtd.yml sync
