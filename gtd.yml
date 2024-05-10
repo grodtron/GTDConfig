@@ -30,6 +30,11 @@ contexts:
   - name: "read"
     emojis: "📚📖▶️"
     color: "salmon"
+  # Not really a context, but rather a "Project" in the GTD sense. Perhaps I will figure out a proper way to model this in the future,
+  # but for now this is better than nothing
+  - name: "Goal"
+    emojis: "🎯"
+    color: "berry_red"
 
 composite_contexts:
   - name: "home"
