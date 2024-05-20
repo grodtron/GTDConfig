@@ -50,6 +50,7 @@ composite_contexts:
      - pharmacy
      - hardware-store
      - groceries
+     - amazon-office
 
 exclusion_lists:
   - name: "NotNow"
